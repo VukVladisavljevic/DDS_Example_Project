@@ -1,0 +1,27 @@
+<div class="row" ng-init="loadArticles()">
+    <h1>Existing articles</h1>
+    <table id="tabela1"  class="table table-striped table-hover">
+        <thead>
+        <tr>
+            <th>Book title: </th>
+            <th>Description: </th>
+            <th>Writer: </th>
+            <th>Year: </th>
+            <th>Price: </th>
+            <th>Units available</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr ng-repeat="b in BOOKS track by $index" >
+            <td style="padding-right: 15px">{{b.title.value}}</td>
+            <td style="padding-right: 15px">{{b.description.value}}</td>
+            <td style="padding-right: 15px">{{b.writer.value}}</td>
+            <td style="padding-right: 15px">{{b.publishingYear.value}}</td>
+            <td style="padding-right: 15px">{{b.price.value}}</td>
+            <td style="padding-right: 15px">{{b.units.value}}</td>
+        </tr>
+
+        </tbody>
+    </table>
+</div>
+</div>

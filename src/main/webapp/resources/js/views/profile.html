@@ -1,0 +1,32 @@
+<div class="row" ng-init="loadData()" ng-cloak>
+    <h2>Personal user information</h2>
+    <div class="col-md-4">
+        <form ng-submit="changeName()" role="form">
+            <div class="form-group">
+                <label for="name" >Name </label>
+                <input type="text" class="form-control" id="name" name="name" ng-model="name"/>
+                <button type="submit" class="btn btn-primary">Change</button>
+            </div>
+        </form>
+        <form ng-submit="changeSurname()" role="form">
+            <div class="form-group">
+                <label for="surname">Surname </label>
+                <input type="text" class="form-control" id="surname" name="surname" ng-model="surname"/>
+                <button type="submit" class="btn btn-primary">Change</button>
+            </div>
+        </form>
+        <div class="form-group">
+            <label for="email" >E-mail</label>
+            <input type="email" class="form-control" id="email" name="email" ng-model="email" readonly="readonly"/>
+        </div>
+        <form ng-submit="changeAddress()" role="form">
+            <div class="form-group">
+                <label for="address" >Adresa</label>
+                <input type="text" class="form-control" id="address" name="address" ng-model="address"/>
+                <button type="submit" class="btn btn-primary">Change</button>
+            </div>
+        </form>
+        <br/>
+    </div>
+</div>
+</div>

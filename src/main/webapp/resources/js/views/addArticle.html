@@ -1,0 +1,35 @@
+<div class="row">
+    <table class="table" align="center">
+        <tbody>
+        <tr>
+            <td><label>Title</label></td>
+            <td><input type="text" name="title" id="title" ng-model="title"/></td>
+        </tr>
+        <tr>
+            <td><label>Description</label></td>
+            <td>
+                <textarea style="resize: none" name="description" id="description" ng-model="description" cols="18" rows="3"></textarea>
+            </td>
+        </tr>
+        <tr>
+            <td><label>Writer</label></td>
+            <td><input type="text" name="writer" id="writer" ng-model="writer"/></td>
+        </tr>
+        <tr>
+            <td><label>Publishing year</label></td>
+            <td><input type="number" name="publishingYear" id="publishingYear" ng-model="publishingYear"/></td>
+        </tr>
+        <tr>
+            <td><label>Price: </label></td>
+            <td><input type="number" step="0.01" name="price" id="price" ng-model="price"/></td>
+        </tr>
+        <tr>
+            <td><label>Number of units</label></td>
+            <td><input type="number" name="units" id="units" ng-model="units"/></td>
+        </tr>
+        </tbody>
+    </table>
+    <form ng-submit="addArticle()" role="form">
+        <button class="btn btn-primary" type="submit">Add</button>
+    </form>
+</div>
